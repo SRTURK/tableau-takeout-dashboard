@@ -1,0 +1,14 @@
+# Tableau 打包工作簿（含数据，体积较大）
+# 若仓库过大，可注释掉以下两行，仅保留 .twb
+*.twbx.tmp
+
+# Tableau 本地缓存与临时文件
+*.hyper
+*.tde
+*.tdsx
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 截图临时文件
+screenshots/*.tmp
