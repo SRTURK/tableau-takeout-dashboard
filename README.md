@@ -5,18 +5,17 @@
 
 仪表板名称：**每日业务情况总览**
 
+**在线交互预览（Tableau Public，公开可访问）**：
+https://public.tableau.com/app/profile/chenxuan.xu/viz/1_17913463288890/1
+
 ![仪表板总览](screenshots/01-dashboard-overview.png)
 
 > 上图为仪表板完整视图（筛选区间 2020-04-05 至 2020-09-25）。
 
-> [!IMPORTANT]
-> **在线交互预览：暂缺**
->
-> 当前工作簿发布在 **Tableau Cloud**（`prod-apsoutheast-b.online.tableau.com`）上的**站点内**，
-> 该环境需要登录授权才能访问，经实测其 REST 接口返回 401，**外部访客无法直接打开**。
->
-> 因此本仓库目前以**截图 + 工作簿文件**的形式呈现效果。
-> 若需提供公开的可交互链接，需改用 **Tableau Public**（`public.tableau.com`，免费且无需登录）重新发布。
+![Tableau Public 预览](screenshots/02-tableau-public-preview.png)
+
+> 上图为 Tableau Public 发布版首页截图（筛选区间 2019-12-14 至 2020-09-25）。
+> 在线版本支持点击饼图交叉筛选、拖动日期滑块、切换门店等交互操作。
 
 ---
 
@@ -49,7 +48,8 @@
 │   ├── takeout-operations-dashboard.twb    Tableau 工作簿（XML，不含数据）
 │   └── takeout-operations-dashboard.twbx   Tableau 打包工作簿（含数据，可直接打开）
 └── screenshots/
-    └── 01-dashboard-overview.png           仪表板完整视图
+    ├── 01-dashboard-overview.png          仪表板完整视图（本地导出）
+    └── 02-tableau-public-preview.png      Tableau Public 发布版首页
 ```
 
 > 打开方式：用 Tableau Desktop / Tableau Reader 直接打开 `workbook/takeout-operations-dashboard.twbx`，
